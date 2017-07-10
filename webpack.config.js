@@ -8,6 +8,11 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    resolve:{
+        alias:{
+            handlebars:'handlebars/dist/handlebars.min.js'
+        }
+    },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
